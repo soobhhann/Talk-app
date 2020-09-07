@@ -1,0 +1,20 @@
+body{
+    background: rgb(139, 23, 46);
+    min-height: 100vh;
+}
+.container{
+    width: 600px;
+    min-height:200px;
+    margin:70px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 995px){
+    .container{
+        width: 95%;
+    }
+}
