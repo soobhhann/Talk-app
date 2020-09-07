@@ -28,7 +28,18 @@ window.SpeechRecognition =
         }
 
         if(res.includes("صفحه آبی شود")){
-            document.body.style = `background: blue`
+            document.body.style = `background: darkblue`
+            res = res.replace("صفحه آبی شود", "")
+        }
+
+        if(res.includes("صفحه قرمز شود")){
+            document.body.style = `background: rgb(139, 23, 46)`
+            res = res.replace("صفحه قرمز شود", "")
+        }
+
+        if(res.includes("صفحه پاک شود")){
+            res = res.replace("صفحه پاک شود", "")
+            p.innerHTML = ""
         }
 
         span.textContent = res + " "
